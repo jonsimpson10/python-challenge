@@ -34,9 +34,9 @@ with open(csvpath, newline="") as csvfile:
     avg_change = sum(revenue_change)/len(revenue_change)
     max_profit = max(revenue_change)
     min_profit = min(revenue_change)
-    max_date = str(month[revenue_change.index(max_profit)])
-    min_date = str(month[revenue_change.index(min_profit)])
-    #I don't know why it's pulling the month before the month with the biggest profit/loss.  I'm running out of time to fix this though so I'll come back to it after I submit the homework.  
+    max_date = str(month[revenue_change.index(max_profit)+1])
+    min_date = str(month[revenue_change.index(min_profit)+1])
+      
 
 
 
